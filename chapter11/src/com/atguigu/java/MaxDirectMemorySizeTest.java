@@ -16,7 +16,9 @@ public class MaxDirectMemorySizeTest {
         Field unsafeField = Unsafe.class.getDeclaredFields()[0];
         unsafeField.setAccessible(true);
         Unsafe unsafe = (Unsafe)unsafeField.get(null);
+        int count = 0;
         while(true){
+            System.out.println(++count);
             unsafe.allocateMemory(_1MB);
         }
 
