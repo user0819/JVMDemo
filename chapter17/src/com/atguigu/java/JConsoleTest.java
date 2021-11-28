@@ -15,7 +15,6 @@ public class JConsoleTest {
     public static void main(String[] args) throws InterruptedException {
         int count = 100;
         while(count >= 0){
-            byte[] bytes = new byte[8 * 1024];
             System.out.println("sleeping");
             Thread.sleep(1000 * 10);
             System.out.println("awake");
